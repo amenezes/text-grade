@@ -1,3 +1,9 @@
+[![ci](https://github.com/amenezes/text-grade/actions/workflows/ci.yml/badge.svg)](https://github.com/amenezes/text-grade/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/amenezes/text-grade/branch/master/graph/badge.svg)](https://codecov.io/gh/amenezes/text-grade)
+[![PyPI version](https://badge.fury.io/py/text-grade.svg)](https://badge.fury.io/py/text-grade)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/text-grade)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 # text-grade
 
 A Python tool to assist text analysis.
