@@ -28,6 +28,7 @@ docs:
 install-deps:
 	@echo "> installing dependencies..."
 	pip install -r requirements-dev.txt
+	pre-commit install
 
 about:
 	@echo "> text-grade: $(VERSION)"
