@@ -96,20 +96,21 @@ def test_has_number_with_punct(nlp, string, expected):
     assert filter.has_numbers_with_punct(doc[0])
 
 
-# @pytest.mark.parametrize(
-#     "string, expected",
-#     [
-#         ("2-22", False),
-#         ("2.22", False),
-#         ("0000.0000", False),
-#         ("2:2", False),
-#         ("2?2", False),
-#         ("222", False),
-#         ("^22", True),
-#         ("!22", True),
-#         ("$2222", True),
-#     ],
-# )
-# def test_has_punct_with_numbers(nlp, string, expected):
-#     doc = nlp(string)
-#     assert filter.has_punct_with_numbers(doc[0]) == expected
+@pytest.mark.parametrize(
+    "string, expected",
+    [
+        ("2-22", False),
+        ("2.22", False),
+        ("0000.0000", False),
+        ("2:2", False),
+        ("222", False),
+        # ("2!2", True),
+        # ("2?2", True),
+        # ("^22", True),
+        # ("!22", True),
+        # ("$2222", True),
+    ],
+)
+def test_has_punct_with_numbers(nlp, string, expected):
+    doc = nlp(string)
+    assert filter.has_punct_with_numbers(doc[0]) == expected

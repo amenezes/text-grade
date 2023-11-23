@@ -1,6 +1,6 @@
-from ._logger import logger
-from .document import Document
-from .score import Score
+from text_grade._logger import logger
+from text_grade.document import Document
+from text_grade.score import Score
 
 
 def flesch_index_pt_br(document: Document) -> Score:

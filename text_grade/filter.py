@@ -4,7 +4,7 @@ import string
 number_and_letter_together_at_end = re.compile(r"([a-zA-Z]{1,2}[0-9]+)")
 number_and_letter_together_at_begin = re.compile(r"([0-9]+[a-zA-Z]{1,2})")
 numbers_with_punct = re.compile(r"([0-9]+.?[0-9]+)")
-punct_with_numbers = re.compile(r"(\^|\$|!|@|#|%|¨|&|\*|\(|\))[0-9]+")
+punct_with_numbers = re.compile(r"(\^|\$|!|\?|@|#|%|¨|&|\*|\(|\))[0-9]+")
 string_is_date = re.compile(r"((^[0-9]{1,2}.)?([0-9]{1,2}).([0-9]{2,4})$)")
 
 

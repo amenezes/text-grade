@@ -1,6 +1,6 @@
-from . import filter, formulas, plot
-from .document import Document
-from .grade import Grade
+from text_grade import filter, formulas, plot
+from text_grade.document import Document
+from text_grade.grade import Grade
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __all__ = ["__version__", "Document", "formulas", "filter", "Grade", "plot"]
