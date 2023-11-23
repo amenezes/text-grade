@@ -1,4 +1,4 @@
-from .grade import Grade
+from text_grade.grade import Grade
 
 
 class Score:

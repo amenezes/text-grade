@@ -7,8 +7,8 @@ from spacy.tokens.doc import Doc
 from spacy.tokens.span import Span
 from spacy.tokens.token import Token
 
-from ._logger import logger
-from .filter import (
+from text_grade._logger import logger
+from text_grade.filter import (
     has_numbers_with_punct,
     has_punct_with_numbers,
     have_letter_and_number_together,

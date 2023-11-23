@@ -10,10 +10,15 @@ A Python tool to assist text analysis.
 
 ## Usage
 
-```python
+``` py
+import logging
+
 import spacy
 
 from text_grade import Document, formulas
+
+
+logging.basicConfig(level=logging.DEBUG)
 
 TEXTO = """
 O algoritmo de Flesch é uma fórmula matemática que é usada para avaliar a legibilidade de um texto em inglês. Ele foi desenvolvido por Rudolf Flesch, um escritor e lexicógrafo austríaco, e é comumente usado por editores, escritores e professores para avaliar a qualidade e a facilidade de leitura de um texto.
